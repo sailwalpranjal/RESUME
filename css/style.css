@@ -10,7 +10,7 @@
     line-height: 1.8;
     font-size: 16px;
     font-weight: 400;
-    background: #fff;
+    background: #ffffff;
     color: gray; }
     body.menu-show {
       overflow: hidden;
@@ -443,7 +443,7 @@
           left: 0; } }
     #colorlib-hero .owl-theme .owl-controls .owl-nav [class*=owl-] {
       padding: 8px 15px;
-      background: #fff;
+      background: #ffffffa7;
       border: none;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
@@ -573,7 +573,18 @@
   
   .hero-img,
   .about-img,
-  .work-img,
+  /* Ensuring the background image behaves consistently across all screen sizes */
+  .work-img {
+    width: 100%;  /* Ensure it takes full width of the container */
+    height: 100%; /* Ensure it takes full height of the container */
+    background-size: contain;  /* Ensure the whole image is visible, scaling as needed */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+  }
+
+
+
+
   .gallery {
     background-size: cover;
     background-position: center center;
