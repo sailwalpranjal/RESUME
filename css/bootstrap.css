@@ -3132,8 +3132,8 @@ output {
   padding: 10px 20px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #555555;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: #191414d4;
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -3157,7 +3157,7 @@ output {
   color: #999;
 }
 .form-control::-webkit-input-placeholder {
-  color: #999;
+  color: #ffffff;
 }
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
   background-color: #eeeeee;
