@@ -1,0 +1,457 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Resume</title>
+	<meta name="viewport" content="width=750,maximum-scale=1, user-scalable=Yes">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+	</head>
+	<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" class="form-control" id="search" placeholder="Taking shortcuts, are we?">
+							<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li><a href="index.html">Home</a></li>                            
+							<li><a href="about.html">About</a></li>
+							<li class="active"><a href="work.html">Projects</a></li>
+							<li><a href="blog.html">Fun Space</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="head-title">Gallery</h2>
+						<a href="images/work-1.png" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.png);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/Portfolio.png" class="gallery image-popup-link text-center" style="background-image: url(images/Portfolio.png);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/Contact Me.png" class="gallery image-popup-link text-center" style="background-image: url(images/Contact\ Me.png);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/Instagram.png" class="gallery image-popup-link text-center" style="background-image: url(images/Instagram.png);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div id="audio-modal" style="display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center; z-index: 9999; color: white; font-family: Arial, sans-serif; animation: fadeIn 0.6s ease-out;">
+		<div style="text-align: center; background: rgba(0, 0, 0, 0.316); padding: 30px; border-radius: 15px; max-width: 500px; width: 90%; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); animation: slideUp 0.8s ease-out;">
+			
+			<!-- Red Text Above the Image -->
+			<div style="color: red; font-size: 30px; font-weight: bold; margin-bottom: 20px;">
+				For the best experience, view on desktop 💻.
+			</div>
+			
+			<!-- Image Section -->
+			<div style="background-image: url('https://img.icons8.com/plasticine/500/saitama.png'); background-size: cover; background-position: center; height: 300px; border-radius: 10px; margin-bottom: 20px;">
+			</div>
+			
+			<!-- Modal Content Below Image -->
+			<h2 style="font-size: 24px; margin-bottom: 30px; color: white;">Would you like to hear the music on this page?</h2>
+			
+			<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+				<!-- Buttons -->
+				<button id="yes-btn" style="background: linear-gradient(135deg, #4CAF50, #8BC34A); border: none; padding: 12px 25px; font-size: 16px; cursor: pointer; border-radius: 8px; color: white; transition: all 0.3s ease-in-out; outline: none;">
+					Yes, unmute it!
+				</button>
+				<button id="no-btn" style="background: linear-gradient(135deg, #f44336, #e57373); border: none; padding: 12px 25px; font-size: 16px; cursor: pointer; border-radius: 8px; color: white; transition: all 0.3s ease-in-out; outline: none;">
+					No, mute it!
+				</button>
+			</div>
+		</div>
+	</div>
+	
+	<style>
+		/* Fade-In Effect for Modal */
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+	
+		/* Slide-Up Effect for the Modal Content */
+		@keyframes slideUp {
+			0% {
+				transform: translateY(30px);
+				opacity: 0;
+			}
+			100% {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+	
+		/* Hover Effects */
+		#yes-btn:hover {
+			transform: scale(1.1);
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+			background: linear-gradient(135deg, #66BB6A, #4CAF50); /* Slightly brighter on hover */
+		}
+	
+		#no-btn:hover {
+			transform: scale(1.1);
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+			background: linear-gradient(135deg, #EF5350, #f44336); /* Slightly brighter on hover */
+		}
+	
+		/* Click Animation for Yes/No buttons */
+		#yes-btn:active, #no-btn:active {
+			transform: scale(0.95);
+			box-shadow: none;
+			transition: all 0.1s ease;
+		}
+	
+		/* Mobile Friendly Styles */
+		@media (max-width: 768px) {
+			#audio-modal {
+				padding: 20px;
+			}
+	
+			.modal-content {
+				padding: 15px;
+				width: 100%;
+			}
+	
+			#yes-btn, #no-btn {
+				width: 100%;
+				padding: 15px 20px;
+				font-size: 18px;
+			}
+	
+			/* Add spacing between buttons for mobile */
+			.button-container {
+				flex-direction: column;
+				gap: 15px;
+			}
+		}
+	
+		/* Transition and smooth effect for buttons */
+		#yes-btn, #no-btn {
+			transition: transform 0.2s, background 0.3s, box-shadow 0.3s ease;
+		}
+	</style>
+	
+	
+	  
+	<script>
+		// Function to mute or unmute the background video
+		function toggleVideoAudio(mute) {
+		  const video = document.getElementById('background-video');
+		  video.muted = mute; // Mute or unmute the video based on the passed value
+		}
+	  
+		// Show the modal on page load
+		document.getElementById("audio-modal").style.display = 'flex';
+	  
+		// Handle the "Yes" button click (unmute the video)
+		document.getElementById("yes-btn").onclick = function() {
+		  toggleVideoAudio(false);  // Unmute the background video
+		  document.getElementById("audio-modal").style.display = 'none';  // Hide the modal
+		};
+	  
+		// Handle the "No" button click (mute the video)
+		document.getElementById("no-btn").onclick = function() {
+		  toggleVideoAudio(true);  // Mute the background video
+		  document.getElementById("audio-modal").style.display = 'none';  // Hide the modal
+		};
+	</script>
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html">Resume</a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div id="colorlib-work">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Projects</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="work-entry-flex animate-box js-fullheight">
+							<div class="col-three-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 col-md-push-10 no-gutters">
+										<div class="work-img js-fullheight" style="background-image: url(images/pranjalsailwal.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-one-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 col-md-pull-12 no-gutters">
+										<div class="display-t js-fullheight">
+											<div class="display-tc js-fullheight">
+												<div class="text-inner text-inner-right">
+													<h2><a href="https://pranjalsailwal.vercel.app/">pranjalsailwal</a></h2>
+                                                    <p><strong>Welcome to my 3D portfolio,</strong> where I showcase my journey into 3D web development. Combining technical expertise with creative vision, I’ve built an interactive, responsive site featuring pre-made 3D models and animations. Developed using Three.js, JavaScript, HTML5, CSS3, and Blender, this project demonstrates the potential of 3D web technologies while offering an optimized and immersive user experience.</p>
+													<p><a href="https://github.com/sailwalpranjal/pranjalsailwal" class="btn-view">View Code</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="work-entry-flex animate-box js-fullheight">
+							<div class="col-three-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 no-gutters">
+										<div class="work-img js-fullheight" style="background-image: url(images/LinkLynx.png);">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-one-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 no-gutters">
+										<div class="display-t js-fullheight">
+											<div class="display-tc js-fullheight">
+												<div class="text-inner text-inner-left">
+													<h2><a href="https://github.com/sailwalpranjal/LinkLynx">LinkLynx</a></h2>
+													<p>LinkLynx is a web crawler designed to analyze and map the connectivity between web pages. It systematically crawls through a website, collects URLs, and creates a report of the links discovered across the site. The main goal of LinkLynx is to visualize how pages on a website are interlinked, which can be useful for SEO, data analysis, and website optimization.</p>
+													<p><a href="https://github.com/sailwalpranjal/LinkLynx" class="btn-view">View Code</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="work-entry-flex animate-box js-fullheight">
+							<div class="col-three-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 col-md-push-10 no-gutters">
+										<div class="work-img js-fullheight" style="background-image: url(images/Sentinal\ NO2\ Detection.png);">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-one-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 col-md-pull-12 no-gutters">
+										<div class="display-t js-fullheight">
+											<div class="display-tc js-fullheight">
+												<div class="text-inner text-inner-right">
+													<h2><a href="https://github.com/sailwalpranjal/SentinelNO2-Detection">SentinelNO2-Detection</a></h2>
+													<p>A Python-based project to detect and analyze atmospheric NO₂ levels using Sentinel-5P data. SentinelNO2-Detection provides efficient data processing pipelines and visualization tools for monitoring NO₂ trends, with an emphasis on studying air quality variations.</p>
+													<p><a href="https://github.com/sailwalpranjal/SentinelNO2-Detection" class="btn-view">View Code</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="work-entry-flex animate-box js-fullheight">
+							<div class="col-three-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 no-gutters">
+										<div class="work-img js-fullheight" style="background-image: url(images/CipherLab.png);">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-one-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 no-gutters">
+										<div class="display-t js-fullheight">
+											<div class="display-tc js-fullheight">
+												<div class="text-inner text-inner-left">
+													<h2><a href="https://github.com/sailwalpranjal/CipherLab?tab=readme-ov-file">CipherLab</a></h2>
+													<p>CipherLab is a Python Tkinter-based tool for encrypting and decrypting text using algorithms such as AES, RSA, and Blowfish. It features language detection, text-to-speech, and customizable themes.</p>
+													<p><a href="https://github.com/sailwalpranjal/CipherLab?tab=readme-ov-file" class="btn-view">View Code</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="work-entry-flex animate-box js-fullheight">
+							<div class="col-three-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 col-md-push-10 no-gutters">
+										<div class="work-img js-fullheight" style="position:relative; overflow:hidden;">
+											<!-- Background Video -->
+											<video id="background-video" autoplay loop muted style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:contain; z-index:-1;">
+											  <source src="videos/PrediStock.mp4" type="video/mp4">Your browser does not support the video tag.
+											</video>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-one-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 col-md-pull-12 no-gutters">
+										<div class="display-t js-fullheight">
+											<div class="display-tc js-fullheight">
+												<div class="text-inner text-inner-right">
+													<h2><a href="https://github.com/sailwalpranjal/PrediStock">PrediStock</a></h2>
+													<p>PrediStock is a command-line application designed to predict stock market trends using historical data. It serves as a valuable tool for traders and investors, providing predictive insights to support informed decision-making.</p>
+													<p><a href="https://github.com/sailwalpranjal/PrediStock" class="btn-view">View Code</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="work-entry-flex animate-box js-fullheight">
+							<div class="col-three-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 no-gutters">
+										<div class="work-img js-fullheight" style="position:relative; overflow:hidden;">
+											<!-- Background Video -->
+											<video id="background-video" autoplay loop muted style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:contain; z-index:-1;">
+											  <source src="videos/ByteBuddies.mp4" type="video/mp4">Your browser does not support the video tag.
+											</video>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-one-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 no-gutters">
+										<div class="display-t js-fullheight">
+											<div class="display-tc js-fullheight">
+												<div class="text-inner text-inner-left">
+													<h2><a href="https://github.com/sailwalpranjal/ByteBuddies">ByteBuddies</a></h2>
+													<p>ByteBuddies is an interactive pet animation project using Python and Tkinter. It features a cute animated pet that moves around the screen and responds to user interactions. Note: ByteBuddies is currently under development.</p>
+													<p><a href="https://github.com/sailwalpranjal/ByteBuddies" class="btn-view">View Code</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="work-entry-flex animate-box js-fullheight">
+							<div class="col-three-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 col-md-push-10 no-gutters">
+										<div class="work-img js-fullheight" style="background-image: url(images/Under_Development.gif);">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-one-forth js-fullheight">
+								<div class="row no-gutters">
+									<div class="col-md-12 col-md-pull-12 no-gutters">
+										<div class="display-t js-fullheight">
+											<div class="display-tc js-fullheight">
+												<div class="text-inner text-inner-right">
+													<h2><a href="https://github.com/sailwalpranjal/Otanjobi-Omedeto">Otanjobi-Omedeto</a></h2>
+													<p>This website was designed to send a heartfelt birthday message to your loved ones. It allows you to share joy and love on their special days, whether it's your mother (definitely deserving one), friends (especially female friends), girlfriend (if you have one), or wife (if she deserves).</p>
+													<p><a href="https://github.com/sailwalpranjal/Otanjobi-Omedeto" class="btn-view">View Code</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<footer>
+		<div class="footer-content" style="text-align: center; padding: 0% 0;">
+			<!-- Image -->
+			<div class="footer-image" style="max-width: 100%; padding-bottom:0 ;">
+				<img src="https://img.icons8.com/plasticine/500/saitama.png" alt="Saitama" style="width: 100%; height: auto; max-width: 200px; display: block; margin: 0 auto;">
+			</div>
+			<!-- End of Page Text -->
+			<div class="footer-text" style="font-size: 18px; font-weight: bold; color: #fefdfd;">
+				<p>END OF PAGE</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
